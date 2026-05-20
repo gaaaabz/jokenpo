@@ -1,5 +1,4 @@
 
-
 trigger:
 - main
 
@@ -10,6 +9,8 @@ steps:
   
 - task: Docker@2
   inputs:
+    containerRegistry: 'jokenporm559597'
+    repository: 'jokenpo'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: |
